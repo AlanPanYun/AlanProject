@@ -1,5 +1,6 @@
 package com.gbi.alanpan.alanproject.dragrecyclerview.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -11,13 +12,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-
 import com.gbi.alanpan.alanproject.R;
 import com.gbi.alanpan.alanproject.dragrecyclerview.adapter.RecyclerAdapter;
 import com.gbi.alanpan.alanproject.dragrecyclerview.common.DividerGridItemDecoration;
 import com.gbi.alanpan.alanproject.dragrecyclerview.entity.Item;
 import com.gbi.alanpan.alanproject.dragrecyclerview.helper.MyItemTouchCallback;
 import com.gbi.alanpan.alanproject.dragrecyclerview.helper.OnRecyclerItemClickListener;
+import com.gbi.alanpan.alanproject.dragrecyclerview.retrofit.RetrofitActivity;
 import com.gbi.alanpan.alanproject.dragrecyclerview.utils.ACache;
 import com.gbi.alanpan.alanproject.dragrecyclerview.utils.VibratorUtil;
 
@@ -41,14 +42,14 @@ public class MyGridFragment extends Fragment implements MyItemTouchCallback.OnDr
             results.addAll(items);
         else {
             for (int i = 0; i < 3; i++) {
-                results.add(new Item(i * 8 + 0, "收款", R.drawable.takeout_ic_category_brand));
-                results.add(new Item(i * 8 + 1, "转账", R.drawable.takeout_ic_category_flower));
-                results.add(new Item(i * 8 + 2, "余额宝", R.drawable.takeout_ic_category_fruit));
-                results.add(new Item(i * 8 + 3, "手机充值", R.drawable.takeout_ic_category_medicine));
-                results.add(new Item(i * 8 + 4, "医疗", R.drawable.takeout_ic_category_motorcycle));
-                results.add(new Item(i * 8 + 5, "彩票", R.drawable.takeout_ic_category_public));
-                results.add(new Item(i * 8 + 6, "电影", R.drawable.takeout_ic_category_store));
-                results.add(new Item(i * 8 + 7, "游戏", R.drawable.takeout_ic_category_sweet));
+                results.add(new Item(i * 8 + 0, "Retrofit", R.drawable.takeout_ic_category_brand));
+//                results.add(new Item(i * 8 + 1, "转账", R.drawable.takeout_ic_category_flower));
+//                results.add(new Item(i * 8 + 2, "余额宝", R.drawable.takeout_ic_category_fruit));
+//                results.add(new Item(i * 8 + 3, "手机充值", R.drawable.takeout_ic_category_medicine));
+//                results.add(new Item(i * 8 + 4, "医疗", R.drawable.takeout_ic_category_motorcycle));
+//                results.add(new Item(i * 8 + 5, "彩票", R.drawable.takeout_ic_category_public));
+//                results.add(new Item(i * 8 + 6, "电影", R.drawable.takeout_ic_category_store));
+//                results.add(new Item(i * 8 + 7, "游戏", R.drawable.takeout_ic_category_sweet));
             }
         }
         results.remove(results.size() - 1);
@@ -79,21 +80,28 @@ public class MyGridFragment extends Fragment implements MyItemTouchCallback.OnDr
         itemTouchHelper = new ItemTouchHelper(new MyItemTouchCallback(adapter).setOnDragListener(this));
         itemTouchHelper.attachToRecyclerView(recyclerView);
 
-        recyclerView.addOnItemTouchListener(new OnRecyclerItemClickListener(recyclerView) {
-            @Override
-            public void onLongClick(RecyclerView.ViewHolder vh) {
-                if (vh.getLayoutPosition() != results.size() - 1) {
-                    itemTouchHelper.startDrag(vh);
-                    VibratorUtil.Vibrate(getActivity(), 70);   //震动70ms
-                }
-            }
+        recyclerView.addOnItemTouchListener(
+                new OnRecyclerItemClickListener(recyclerView) {
+                    @Override
+                    public void onLongClick(RecyclerView.ViewHolder vh) {
+                        if (vh.getLayoutPosition() != results.size() - 1) {
+                            itemTouchHelper.startDrag(vh);
+                            VibratorUtil.Vibrate(getActivity(), 70);   //震动70ms
+                        }
+                    }
 
-            @Override
-            public void onItemClick(RecyclerView.ViewHolder vh) {
-                Item item = results.get(vh.getLayoutPosition());
-                Toast.makeText(getActivity(), item.getId() + " " + item.getName(), Toast.LENGTH_SHORT).show();
-            }
-        });
+                    @Override
+                    public void onItemClick(RecyclerView.ViewHolder vh) {
+                        Item item = results.get(vh.getLayoutPosition());
+                        switch (item.getName()){
+                            case "Retrofit":
+                                Intent intent = new Intent(getActivity(), RetrofitActivity.class);
+                                startActivity(intent);
+                                break;
+                        }
+                        Toast.makeText(getActivity(), item.getId() + " " + item.getName(), Toast.LENGTH_SHORT).show();
+                    }
+                });
     }
 
     @Override

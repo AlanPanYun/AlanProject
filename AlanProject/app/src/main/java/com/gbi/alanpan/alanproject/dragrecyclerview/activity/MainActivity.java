@@ -1,9 +1,8 @@
 package com.gbi.alanpan.alanproject.dragrecyclerview.activity;
 
 import android.os.Bundle;
-import android.support.v4.app.*;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.gbi.alanpan.alanproject.R;
@@ -12,19 +11,19 @@ import com.gbi.alanpan.alanproject.dragrecyclerview.fragment.MyGridFragment;
 import com.gbi.alanpan.alanproject.dragrecyclerview.fragment.MyListFragment;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity
+        extends AppCompatActivity
+        implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
-        if (savedInstanceState==null){
+        if (savedInstanceState == null) {
             MainFragment mainFragment = new MainFragment();
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.fragment,mainFragment)
+                    .add(R.id.fragment, mainFragment)
                     .commit();
         }
     }
@@ -32,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Fragment fragment = null;
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.list:
                 fragment = new MyListFragment();
                 break;
