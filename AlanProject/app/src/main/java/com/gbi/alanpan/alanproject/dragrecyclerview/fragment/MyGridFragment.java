@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.gbi.alanpan.alanproject.R;
+import com.gbi.alanpan.alanproject.dragrecyclerview.activity.ClockActivity;
 import com.gbi.alanpan.alanproject.dragrecyclerview.adapter.RecyclerAdapter;
 import com.gbi.alanpan.alanproject.dragrecyclerview.common.DividerGridItemDecoration;
 import com.gbi.alanpan.alanproject.dragrecyclerview.entity.Item;
@@ -43,7 +44,7 @@ public class MyGridFragment extends Fragment implements MyItemTouchCallback.OnDr
         else {
             for (int i = 0; i < 3; i++) {
                 results.add(new Item(i * 8 + 0, "Retrofit", R.drawable.takeout_ic_category_brand));
-//                results.add(new Item(i * 8 + 1, "转账", R.drawable.takeout_ic_category_flower));
+                results.add(new Item(i * 8 + 1, "ClockView", R.drawable.takeout_ic_category_flower));
 //                results.add(new Item(i * 8 + 2, "余额宝", R.drawable.takeout_ic_category_fruit));
 //                results.add(new Item(i * 8 + 3, "手机充值", R.drawable.takeout_ic_category_medicine));
 //                results.add(new Item(i * 8 + 4, "医疗", R.drawable.takeout_ic_category_motorcycle));
@@ -93,12 +94,18 @@ public class MyGridFragment extends Fragment implements MyItemTouchCallback.OnDr
                     @Override
                     public void onItemClick(RecyclerView.ViewHolder vh) {
                         Item item = results.get(vh.getLayoutPosition());
-                        switch (item.getName()){
+                        Intent intent = null;
+                        switch (item.getName()) {
                             case "Retrofit":
-                                Intent intent = new Intent(getActivity(), RetrofitActivity.class);
-                                startActivity(intent);
+                                intent = new Intent(getActivity(), RetrofitActivity.class);
+
                                 break;
+                            case "ClockView":
+                                intent = new Intent(getActivity(), ClockActivity.class);
+                                break;
+
                         }
+                        startActivity(intent);
                         Toast.makeText(getActivity(), item.getId() + " " + item.getName(), Toast.LENGTH_SHORT).show();
                     }
                 });
