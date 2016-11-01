@@ -4,26 +4,26 @@
     api-level="19"
     density="xxhdpi"
     format="7"
-    timestamp="1185484760218" >
+    timestamp="16795427375224" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="132" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="21" />
     <task
         name="verifier"
-        duration="0" />
+        duration="1" />
 
     <artifact
         location="F:\mygit\Fresco\AlanProject\AlanProject\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="1185484760218" >
+    <build timestamp="16795427375224" >
         <artifact
             location="F:\mygit\Fresco\AlanProject\AlanProject\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />

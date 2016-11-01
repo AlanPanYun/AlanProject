@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".dragrecyclerview.retrofit.RetrofitActivity"/>
+        <activity android:name=".dragrecyclerview.activity.ClockActivity"/>
     </application>
 
 </manifest>

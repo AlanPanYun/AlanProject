@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:2:1-28:12
 	xmlns:android
 		ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:2:11-69
 	package
@@ -22,7 +22,7 @@ ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.
 	android:name
 		ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:7:22-64
 application
-ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:9:5-25:19
+ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:9:5-26:19
 MERGED from [com.android.support:appcompat-v7:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:25:5-20
 MERGED from [com.android.support:support-v4:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
@@ -71,6 +71,10 @@ activity#com.gbi.alanpan.alanproject.dragrecyclerview.retrofit.RetrofitActivity
 ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:24:9-79
 	android:name
 		ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:24:19-77
+activity#com.gbi.alanpan.alanproject.dragrecyclerview.activity.ClockActivity
+ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:25:9-76
+	android:name
+		ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:25:19-74
 uses-sdk
 INJECTED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\AndroidManifest.xml:21:5-23:78

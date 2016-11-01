@@ -28,6 +28,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.gbi.alanpan.alanproject.dragrecyclerview.retrofit.RetrofitActivity" />
+        <activity android:name="com.gbi.alanpan.alanproject.dragrecyclerview.activity.ClockActivity" />
     </application>
 
 </manifest>
