@@ -32,6 +32,10 @@
         "source": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\notification_media_action.xml"
     },
     {
+        "merged": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_customview.xml",
+        "source": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\src\\main\\res\\layout\\activity_customview.xml"
+    },
+    {
         "merged": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_list.xml",
         "source": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\src\\main\\res\\layout\\item_list.xml"
     },
@@ -156,12 +160,20 @@
         "source": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
         "merged": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
         "source": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\select_dialog_item_material.xml"
     },
     {
         "merged": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
         "source": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.2.1\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_diff.xml",
+        "source": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\src\\main\\res\\layout\\item_diff.xml"
     },
     {
         "merged": "F:\\mygit\\Fresco\\AlanProject\\AlanProject\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",

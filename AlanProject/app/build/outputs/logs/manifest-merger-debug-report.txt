@@ -41,6 +41,7 @@ MERGED from [com.android.support:support-v4:23.2.1] F:\mygit\Fresco\AlanProject\
 MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:7:5-20
 MERGED from [com.android.support:support-v4:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:22:5-20
 	android:supportsRtl
 		ADDED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml:13:9-35
 	android:label
@@ -96,6 +97,8 @@ MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\mygit\Fresco
 MERGED from [com.android.support:support-v4:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-vector-drawable:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:23.2.1] F:\mygit\Fresco\AlanProject\AlanProject\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from F:\mygit\Fresco\AlanProject\AlanProject\app\src\main\AndroidManifest.xml

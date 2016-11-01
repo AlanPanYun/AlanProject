@@ -1,0 +1,20 @@
+package com.gbi.alanpan.alanproject.dragrecyclerview.activity;
+
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+
+import com.gbi.alanpan.alanproject.R;
+
+/**
+ * Created by alan.pan on 2016/11/1.
+ */
+public class CustomViewActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        setContentView(R.layout.activity_customview);
+    }
+}
